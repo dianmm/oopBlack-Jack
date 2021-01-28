@@ -144,6 +144,7 @@
     <ClCompile Include="diller.cpp" />
     <ClCompile Include="Hand.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="play.cpp" />
     <ClCompile Include="player.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -151,6 +152,7 @@
     <ClInclude Include="deck.h" />
     <ClInclude Include="diller.h" />
     <ClInclude Include="Hand.h" />
+    <ClInclude Include="play.h" />
     <ClInclude Include="player.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
