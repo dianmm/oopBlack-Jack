@@ -1,2 +1,15 @@
-﻿  player.cpp
-  blackJack OOP.vcxproj -> C:\Users\st\source\repos\blackJack OOP\Debug\blackJack OOP.exe
+﻿  Card.cpp
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Card.cpp(47,2): error C2601: wmain: недопустимые локальные определения функций
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Card.cpp(14): message : эта строка содержит скобку "{", которая пока не имеет парной
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Card.cpp(50,46): warning C4566: символ, представленный универсальным именем символа "\u2666", невозможно представить в текущей кодовой странице (1251)
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Card.cpp(53,45): warning C4566: символ, представленный универсальным именем символа "\u2665", невозможно представить в текущей кодовой странице (1251)
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Card.cpp(56,46): warning C4566: символ, представленный универсальным именем символа "\u2660", невозможно представить в текущей кодовой странице (1251)
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Card.cpp(59,46): warning C4566: символ, представленный универсальным именем символа "\u2663", невозможно представить в текущей кодовой странице (1251)
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Card.cpp(50,7): error C2065: m_suit: необъявленный идентификатор
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Card.cpp(50,17): error C2065: CARD_DIAMONDS: необъявленный идентификатор
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Card.cpp(53,8): error C2065: m_suit: необъявленный идентификатор
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Card.cpp(53,18): error C2065: CARD_HEARTS: необъявленный идентификатор
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Card.cpp(56,9): error C2065: m_suit: необъявленный идентификатор
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Card.cpp(56,19): error C2065: CARD_SPADES: необъявленный идентификатор
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Card.cpp(59,10): error C2065: m_suit: необъявленный идентификатор
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Card.cpp(59,20): error C2065: CARD_CLUBS: необъявленный идентификатор

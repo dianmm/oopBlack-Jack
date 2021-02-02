@@ -34,6 +34,7 @@ void Deck::print_deck() {
     //std::cout << m_deck[i];
 //<< m_deck
 }
+//конструкция поп
 Card Deck::pop() {
     int lastCard = m_deck.size() - 1;
     Card temp = m_deck[lastCard];
