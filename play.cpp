@@ -5,6 +5,7 @@
 #include"hand.h"
 #include"player.h"
 #include"diller.h"
+#include"GameScore.h"
 //я создала файл чтобы переместить сюда все решение из мейна
 using namespace std;
 #include"play.h"
@@ -66,6 +67,9 @@ void Game::playing(){
 						cout << "дилер проиграл" << endl;
 						break;
 					}
-				}
+		 		}
+		
+
+		
 	}
 }
