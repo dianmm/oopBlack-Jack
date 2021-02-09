@@ -1,6 +1,5 @@
 ﻿  main.cpp
   play.cpp
-C:\Users\st\source\repos\blackJack OOP\blackJack OOP\play.cpp(15,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  player.cpp
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\play.cpp(20,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
   Создание кода...
   blackJack OOP.vcxproj -> C:\Users\st\source\repos\blackJack OOP\Debug\blackJack OOP.exe
