@@ -28,7 +28,7 @@ void Game::playing(GameScore& game_score){
 		player1.play(my_deck);
 		currentGameStatus = player1.checkGameStatus();
 		if (currentGameStatus == Hand::GAME_WIN) {
-			cout << "игрок вийграл" << endl;
+			cout << "игрок выйграл" << endl;
 			game_score.increasePlayerWins();
 			break;
 

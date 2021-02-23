@@ -1,5 +1,7 @@
-﻿  main.cpp
+﻿  Card.cpp
+  Hand.cpp
   play.cpp
 C:\Users\st\source\repos\blackJack OOP\blackJack OOP\play.cpp(20,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
   Создание кода...
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Card.cpp(96): warning C4715: Card::get_score: значение возвращается не при всех путях выполнения
   blackJack OOP.vcxproj -> C:\Users\st\source\repos\blackJack OOP\Debug\blackJack OOP.exe
