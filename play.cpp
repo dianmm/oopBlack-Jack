@@ -9,7 +9,7 @@
 //я создала файл чтобы переместить сюда все решение из мейна
 using namespace std;
 #include"play.h"
-void Game::playing(GameScore& game_score){
+void Game::playing(GameScore& game_score, sf::RenderWindow& window){
 
 	setlocale(LC_ALL, "Rus");
 	
@@ -22,9 +22,9 @@ void Game::playing(GameScore& game_score){
 	//my_deck.print_deck();
 	Player player1;
 	Dealer dealer;
-	
+
 	Hand::Gamestatus currentGameStatus = Hand::GAME_CONTINUE;
-	while (true) {
+	while (window.isOpen()) {
 		player1.play(my_deck);
 		currentGameStatus = player1.checkGameStatus();
 		if (currentGameStatus == Hand::GAME_WIN) {
@@ -79,5 +79,5 @@ void Game::playing(GameScore& game_score){
 
 		
 	}game_score.printScore();
-
+	
 }
