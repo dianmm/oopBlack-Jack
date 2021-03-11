@@ -1,3 +1,37 @@
-﻿  main.cpp
+﻿  Card.cpp
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Card.cpp(18,58): warning C4244: аргумент: преобразование "float" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Card.cpp(18,47): warning C4244: аргумент: преобразование "float" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Card.cpp(29,46): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Card.cpp(35,47): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Card.cpp(38,47): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Card.cpp(40,17): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Card.cpp(41,58): warning C4244: аргумент: преобразование "float" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Card.cpp(41,47): warning C4244: аргумент: преобразование "float" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+  Hand.cpp
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Hand.cpp(35,12): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  deck.cpp
+  diller.cpp
+  main.cpp
 C:\Users\st\source\repos\blackJack OOP\blackJack OOP\main.cpp(16,7): warning C4101: game: неиспользованная локальная переменная
+  play.cpp
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\play.cpp(16,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  player.cpp
+  Создание кода...
+C:\Users\st\source\repos\blackJack OOP\blackJack OOP\Card.cpp(125): warning C4715: Card::get_score: значение возвращается не при всех путях выполнения
   blackJack OOP.vcxproj -> C:\Users\st\source\repos\blackJack OOP\Debug\blackJack OOP.exe

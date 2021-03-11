@@ -2,6 +2,7 @@
 #include "card.h"
 #include "deck.h"
 #include <vector>
+#include <SFML/Graphics.hpp>
 class Hand {
 	
 protected:
@@ -19,4 +20,5 @@ public:
 	void printHand();
 	int calculateScore();
 	Gamestatus checkGameStatus();
+	void drawHand(sf::RenderWindow&);
 };

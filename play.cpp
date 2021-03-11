@@ -9,13 +9,9 @@
 //я создала файл чтобы переместить сюда все решение из мейна
 using namespace std;
 #include"play.h"
-void Game::playing(GameScore& game_score, sf::RenderWindow& window){
+void Game::playing(GameScore& game_score, sf::RenderWindow& window) {
 
 	setlocale(LC_ALL, "Rus");
-	
-	/// 
-	
-	/// 
 	Deck my_deck;//конструктор по умолчанию (без параметров)
 	srand(time(0));
 	my_deck.shuffle();
@@ -25,59 +21,70 @@ void Game::playing(GameScore& game_score, sf::RenderWindow& window){
 
 	Hand::Gamestatus currentGameStatus = Hand::GAME_CONTINUE;
 	while (window.isOpen()) {
-		player1.play(my_deck);
-		currentGameStatus = player1.checkGameStatus();
-		if (currentGameStatus == Hand::GAME_WIN) {
-			cout << "игрок выйграл" << endl;
-			game_score.increasePlayerWins();
-			break;
+		sf::Event event;
+		while (window.pollEvent(event))
+		{
+			// Пользователь нажал на «крестик» и хочет закрыть окно?
+			if (event.type == sf::Event::Closed)
+				// тогда закрываем его
+				window.close();
 
-		}
-		else
-			if (currentGameStatus == Hand::GAME_LOSE) {
-				cout << "игрок проиграл" << endl;
-				game_score.increaseDialerWins();
+			player1.play(my_deck, window);
+
+			currentGameStatus = player1.checkGameStatus();
+			if (currentGameStatus == Hand::GAME_WIN) {
+				cout << "игрок выйграл" << endl;
+				game_score.increasePlayerWins();
 				break;
+
 			}
+
 			else
-				if (currentGameStatus == Hand::GAME_CONTINUE) {
-					dealer.play(my_deck);
-					currentGameStatus = dealer.checkGameStatus();
-
+				if (currentGameStatus == Hand::GAME_LOSE) {
+					cout << "игрок проиграл" << endl;
+					game_score.increaseDialerWins();
+					break;
+				}
+				else
 					if (currentGameStatus == Hand::GAME_CONTINUE) {
+						dealer.play(my_deck);
+						currentGameStatus = dealer.checkGameStatus();
 
-						int playerScore = player1.calculateScore();
-						int dealerScore = dealer.calculateScore();
-						if (playerScore > dealerScore) {
-							cout << "игрок выйграл" << endl; game_score.increasePlayerWins();
-							break;
-						}
-						else
-							if (dealerScore > playerScore) {
-								cout << "дилер выйграл" << endl; game_score.increaseDialerWins();
+						if (currentGameStatus == Hand::GAME_CONTINUE) {
+
+							int playerScore = player1.calculateScore();
+							int dealerScore = dealer.calculateScore();
+							if (playerScore > dealerScore) {
+								cout << "игрок выйграл" << endl; game_score.increasePlayerWins();
 								break;
 							}
 							else
-								if (dealerScore == playerScore) {
-									cout << "ничья" << endl; game_score.increaseDraw();
+								if (dealerScore > playerScore) {
+									cout << "дилер выйграл" << endl; game_score.increaseDialerWins();
 									break;
 								}
+								else
+									if (dealerScore == playerScore) {
+										cout << "ничья" << endl; game_score.increaseDraw();
+										break;
+									}
 
 
+						}
+						if (currentGameStatus == Hand::GAME_WIN) {
+							cout << "дилер выйграл" << endl; game_score.increaseDialerWins();
+							break;
+
+						}
+						if (currentGameStatus == Hand::GAME_LOSE) {
+							cout << "дилер проиграл" << endl; game_score.increasePlayerWins();
+							break;
+						}
 					}
-					if (currentGameStatus == Hand::GAME_WIN) {
-						cout << "дилер выйграл" << endl; game_score.increaseDialerWins();
-						break;
 
-					}
-					if (currentGameStatus == Hand::GAME_LOSE) {
-						cout << "дилер проиграл" << endl; game_score.increasePlayerWins();
-						break;
-					}
-		 		}
-		
 
-		
-	}game_score.printScore();
-	
+
+		}game_score.printScore();
+
+	}
 }
